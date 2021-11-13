@@ -24,6 +24,8 @@ In the file, [05_advertisement_image_feature_googleAPI.ipynb](https://github.com
 
 In the file, [06_advertisement_prediction_img_featues.ipynb](https://github.com/ching870423/Digital_content_revenue_prediction/blob/main/06_advertisement_prediction_img_featues.ipynb), I undersampled randomly using [RandomUnderSampler](https://imbalanced-learn.org/stable/references/generated/imblearn.under_sampling.RandomUnderSampler.html) and oversampled using [SMOTE](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html) before building prediction models. Then, I demonstrated how to applied our customized data set to 2 classifier: Decision Tree (using [scikit-learn library](https://scikit-learn.org/stable/modules/tree.html)) and XGboost (using [XGBoost library](https://xgboost.readthedocs.io/en/latest/python/python_intro.html)).
 
+In the file, [07_advertisment_prediction_img_keras_dnn.ipynb](https://github.com/ching870423/Digital_content_revenue_prediction/blob/main/07_advertisment_prediction_img_keras_dnn.ipynb), after dealing with imbalanced issue, I built up a deep neuron network classifier usgin [Keras](https://keras.io/guides/sequential_model/). I also selected the number of nodes in hidden layer to get a better performance.
+
 ## Result
 - List of columns used in classifiers
 
@@ -35,6 +37,10 @@ In the file, [06_advertisement_prediction_img_featues.ipynb](https://github.com/
 |fans|number of fans of the Facebook page|
 |ent0-28|if a keyword exists in the subject and first few words of apost,one-hot encoded|
 |img_size_pixel|the width, height, and area of main image in posts|
-|img_colorthe RGB color codes of topic colors for main image in posts|
+|img_color|the RGB color codes of topic colors for main image in posts|
 |clicks|numnber clicks a post received|
 |adsense_revenue|monetary revenue a post generated|
+
+- A brief result of each combination of machine learning methods
+
+---need license from the research team---
